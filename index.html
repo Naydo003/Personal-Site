@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- Published at https://naydo003.github.io/Personal-Site/ via GitHub -->
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -11,26 +14,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
+<!-- <head>, main, section, footer etc are all just divs but semantics make it easier to read and refer to -->
 <body>
   <!-- what you see on the webpage -->
+  <header>
+    <a href="index.html">Home</a>
+    <a href="Resume.html">Resume</a>
+    <a href="Contact.html">Contact</a>
+  </header>
 
-<!-- Inserting a table for layout, tr adds new row, td ads table data / columns -->
-  <table>
+  <main>
+
+
+  <!-- Inserting a table for layout, tr adds new row, td ads table data / columns -->
+<section>
+
+ <table>
     <tr>
       <td>
         <img src="Images\290172853_577554553762060_7973697828486394472_n.jpg" alt="Profile Pic">
         <!-- Inserts an image from drive, alt shows alternative text for if image doesn't display -->
       </td>
       <td>
-        <h1>Nathan Phillips</h1>
+        <!-- &entity; allows us to write symbols, avoids confusion from browser -->
+        <h1>Nathan Phillips &trade;</h1>
         <p><em>The <strong>Man</strong>, the <strong>Myth</strong>, the <strong>Legend!</strong></em></p> <!-- paragraph - strong better alternative to bold and emphasis a better alternative to italicise -->
+<p>Est. <time datetime="1989-10-13">Oct 13 1989</time></p>
       </td>
     </tr>
   </table>
-
+</section>
   <hr>
-  <h2>Project Ideas</h2>
+<section>
+
+ <h2>Project Ideas</h2>
   <ol>
     <!-- ordered list with nested unordered list -->
     <li>Online Renting Market Place
@@ -44,30 +61,42 @@
     <li>Electricity Market Place</li>
     <li>Online Education Program</li>
   </ol>
+<!-- the <span> allows us to select single things in block elements or larger groups -->
+  <p>Most, if not all, of my Genius ideas are held back by one thing... <span>Coding!</span> But not anymore...</p>
 
   <p>Check out my <a href="Resume.html">Resume</a> or <a href="Contact.html">Contact Me</a> now!</p>
-
+</section>
   <img width=400 src="https://cliparting.com/wp-content/uploads/2018/03/cool-pictures-2018-32.jpg" alt="Cool Cat"> <!-- inserting an image from webpage -->
 
-  <h3>GET SOCIAL</h3>
-  <!-- Add font awesome icons -->
-  <!-- <a href="https://www.facebook.com/nathan.phillips.94651/" class="fa fa-facebook"></a> -->
-  <!-- <a href="#" class="fa fa-instagram"></a> -->
+  </main>
 
-<!-- Inserts social media icons and hyperlinks them. Note icons are from cloudflare library. span etc is something to do with css i think  -->
-  <a class="footer social ffacebook" href="https://www.facebook.com/nathan.phillips.94651/" target="_blank" rel="noopener"></a>
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-  </span>
+<footer>
+<!-- a div groups things together. Useful for CSS styling to multiple things -->
+  <div>
 
-  <a class="footer-social finstagram" href="https://www.instagram.com/woolshedonhindley/" target="_blank" rel="noopener">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
+    <h3>GET SOCIAL</h3>
+    <!-- Add font awesome icons -->
+    <!-- <a href="https://www.facebook.com/nathan.phillips.94651/" class="fa fa-facebook"></a> -->
+    <!-- <a href="#" class="fa fa-instagram"></a> -->
 
+    <!-- Inserts social media icons and hyperlinks them. Note icons are from cloudflare library. span etc is something to do with css i think  -->
+    <a class="footer social ffacebook" href="https://www.facebook.com/nathan.phillips.94651/" target="_blank" rel="noopener">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+
+    <a class="footer-social finstagram" href="https://www.instagram.com/woolshedonhindley/" target="_blank" rel="noopener">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </div>
+
+  &copy;
+</footer>
 </body>
 
 </html>
